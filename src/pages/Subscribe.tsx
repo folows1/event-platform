@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { useMyMutationMutation } from "../graphql/generated";
+import imgUrl from '../assets/bg.png'
 
 export function Subscribe() {
 
@@ -66,7 +67,7 @@ export function Subscribe() {
                 </div>
             </div>
 
-            <img src="/static/bg.png" className="mt-10" alt="bg" />
+            <img src={imgUrl} className="mt-10" alt="bg" />
         </div>
     )
 }
